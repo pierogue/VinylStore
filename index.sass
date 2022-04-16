@@ -1,0 +1,374 @@
+*
+  padding: 0
+  margin: 0
+  box-sizing: border-box
+
+header#mainHeader
+  width: 100%
+  height: 60px
+  background-color: rgb(255, 255, 255)
+  display: flex
+  flex-flow: row nowrap
+  position: fixed
+
+  #menu
+    display: none
+
+  div#mainLogo
+    height: 100%
+    width: 200px
+
+    svg
+      width: 200px
+      margin-left: 0px
+
+  nav#mainNav
+    flex-grow: 1
+    height: 100%
+    display: flex
+    flex-flow: nowrap row
+    align-items: center
+    justify-content: space-evenly
+    font-family: 'Montserrat-hairline'
+
+a
+  text-decoration: none
+  color: inherit
+
+header#mainHeader nav#mainNav div
+  width: 300px
+  text-align: center
+  font-size: 18px
+
+nav#mainNav div img
+  display: none
+
+div
+  &#greetPic
+    background-image: url(src/record-shop-mick-haupt-unsplash.jpg)
+    background-color: rgba(0, 0, 0, 0.3)
+    background-size: cover
+    background-blend-mode: hue
+    width: 100%
+    height: 400px
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-content: center
+    text-align: center
+
+  &#playersPic
+    background-image: url(src/grammofon-vinilovye-plastinki-muzyka-stol-okno.jpg)
+    background-position: 0%
+    background-color: rgba(0, 0, 0, 0.3)
+    background-size: cover
+    background-blend-mode: hue
+    width: 100%
+    height: 400px
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-content: center
+
+  &#cartPic
+    background-image: url(src/cart.png)
+    background-position: 0%
+    background-color: rgba(0, 0, 0, 0.3)
+    background-size: cover
+    background-blend-mode: hue
+    width: 100%
+    height: 240px
+    display: flex
+    flex-flow: column wrap
+    justify-content: center
+    align-content: center
+
+#cartPic p#greet span
+  display: inline-block
+  width: 100%
+  text-align: center
+  color: white
+  font-size: 40px
+  word-spacing: 0px
+  font-weight: 700
+  font-family: 'Montserrat'
+
+#playersPic p, #greetPic p
+  &#greet span
+    display: inline-block
+    width: 100%
+    text-align: center
+    color: white
+    font-size: 30px
+    word-spacing: 0px
+    font-weight: 900
+    font-family: 'Montserrat'
+
+  color: white
+  font-size: 16px
+  margin-top: 40px
+  text-shadow: black 0px 0px 10px
+  font-family: 'Montserrat-hairline'
+
+main#mainContent
+  width: 100%
+  height: fit-content
+  display: flex
+  flex-flow: row wrap
+  justify-content: center
+
+  form
+    margin: 20px
+    width: 600px
+    height: 400px
+    display: flex
+    flex-flow: column wrap
+    align-content: space-between
+
+form
+  label
+    font-family: Montserrat-hairline
+    display: block
+    font-size: 14px
+    height: 20px
+
+  div
+    width: 280px
+    margin: 3px
+
+    span
+      font-family: Montserrat-hairline
+      font-size: 16px
+
+    input
+      width: 100%
+      height: 30px
+      font-family: Montserrat
+
+  input
+    &[type=radio]
+      width: 16px
+      height: 16px
+      margin: 5px
+      accent-color: black
+
+    &[type=submit]
+      height: 40px
+      background-color: black
+      color: white
+      border: none
+      font-family: Montserrat-bold
+      cursor: pointer
+
+  textarea
+    height: 142px
+    width: 100%
+    resize: vertical
+    max-height: 142px
+    min-height: 30px
+    font-family: Montserrat
+    padding: 5px
+
+main
+  a div.item
+    width: 370px
+    height: 460px
+    display: flex
+    flex-flow: row wrap
+    justify-content: center
+    align-content: center
+    padding: 20px
+
+  div.item
+    &:hover
+      box-shadow: black 0px 0px 5px
+
+    div
+      &.cover
+        width: 100%
+        height: 300px
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+
+      &.playerImage
+        width: 100%
+        height: 300px
+        display: flex
+        flex-flow: row wrap
+        justify-content: center
+        align-items: center
+
+        img
+          width: 300px
+          height: 300px
+
+    .playerName
+      font-family: Montserrat
+      font-size: 18px
+
+    .color
+      font-family: thin
+      margin-bottom: 15px
+
+    div.cover img
+      width: 300px
+      height: 300px
+      box-shadow: black 0px 0px 3px
+
+    .album
+      width: 100%
+
+    span
+      width: 100%
+      display: block
+      text-align: center
+
+      &.albumName
+        font-family: Montserrat
+        font-size: 18px
+
+      &.artistName
+        font-family: thin
+        margin-bottom: 15px
+
+      &.year
+        font-family: Montserrat
+
+      &.price
+        font-family: Montserrat-bold
+        font-size: 15px
+
+      &.genre
+        font-family: thin
+
+footer#mainFoot
+  width: 100%
+  height: 240px
+  background-color: black
+  display: flex
+  flex-flow: row wrap
+
+  nav#footNav
+    width: 100%
+    display: flex
+    flex-flow: row nowrap
+    justify-content: center
+
+    div
+      width: 120px
+      height: 120px
+      padding: 30px
+
+  #footLogo
+    width: 100%
+    display: flex
+    justify-content: center
+
+    svg
+      height: 120px
+
+@media (min-width: 768px)
+  header#mainHeader
+    width: 100%
+    height: 60px
+    background-color: rgb(255, 255, 255)
+    display: flex
+    flex-flow: row nowrap
+    position: absolute
+
+    nav#mainNav div
+      width: 200px
+      text-align: center
+      font-size: 18px
+
+@media (max-width: 768px)
+  header#mainHeader nav#mainNav div
+    width: 200px
+    text-align: center
+    font-size: 18px
+
+@media (max-width: 606px)
+  header#mainHeader
+    width: 100%
+    height: 60px
+    background-color: rgb(255, 255, 255)
+    display: flex
+    flex-flow: row wrap
+    position: absolute
+
+    div#mainLogo
+      width: 100%
+      display: flex
+      justify-content: center
+      height: 60px
+
+    img#menu
+      height: 30px
+      position: absolute
+      margin: 15px
+      display: inline
+
+    &:hover nav#mainNav
+      display: flex
+
+    nav#mainNav
+      background-color: white
+      width: 100%
+      height: fit-content
+      display: none
+      flex-flow: row wrap
+      align-items: center
+      font-family: Montserrat
+
+      div
+        width: 200px
+        height: 200px
+        display: flex
+        flex-flow: column nowrap
+        align-items: center
+
+  nav#mainNav div img
+    display: block
+    width: 140px
+    height: 140px
+
+@media (max-width: 360px)
+  footer#mainFoot
+    nav#footNav
+      display: flex
+      flex-flow: row wrap
+
+    height: fit-content
+
+  main#mainContent div.item
+    width: 100%
+    padding: 0px
+
+    img
+      width: 100%
+
+@media (max-width: 575px)
+  main#mainContent form
+    width: 300px
+    height: fit-content
+
+  div#cartPic #greet span
+    font-size: 30px
+
+@font-face
+  font-family: 'Montserrat'
+  src: url(src/fonts/Montserrat-Regular.otf)
+
+@font-face
+  font-family: 'Montserrat-hairline'
+  src: url(src/fonts/Montserrat-ExtraLight.otf)
+
+@font-face
+  font-family: 'Montserrat-bold'
+  src: url(./src/fonts/Montserrat-Bold.otf)
+
+@font-face
+  font-family: thin
+  src: url(./src/fonts/Montserrat-Thin.otf)
