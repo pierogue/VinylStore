@@ -330,6 +330,10 @@ footer#mainFoot #footLogo svg {
     height: 120px;
 }
 
+header#mainHeader input[type=checkbox]{
+    display: none;
+}
+
 @media (min-width: 768px) {
     header#mainHeader {
         width: 100%;
@@ -380,7 +384,7 @@ footer#mainFoot #footLogo svg {
         display: inline;
     }
 
-    header#mainHeader:hover nav#mainNav {
+    header#mainHeader #menuButton:checked ~ nav#mainNav {
         display: flex;
     }
 
