@@ -269,6 +269,9 @@ footer#mainFoot
     svg
       height: 120px
 
+header#mainHeader input[type=checkbox]
+  display: none
+
 @media (min-width: 768px)
   header#mainHeader
     width: 100%
@@ -310,7 +313,7 @@ footer#mainFoot
       margin: 15px
       display: inline
 
-    &:hover nav#mainNav
+    #menuButton:checked ~ nav#mainNav
       display: flex
 
     nav#mainNav
