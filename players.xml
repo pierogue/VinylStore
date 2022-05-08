@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<content>
+	<player>
+		<name>
+			Crosley Cruiser Deluxe Black
+		</name>
+		<color>
+			Чёрный
+		</color>
+		<price>
+			435
+		</price>
+	</player>
+	<player>
+		<name>
+			Audio-Technica AT-LP60X Bluetooth
+		</name>
+		<color>
+			Белый
+		</color>
+		<price>
+			1049
+		</price>
+	</player>
+	<player>
+		<name>
+			ION Mustang LP
+		</name>
+		<color>
+			Красный
+		</color>
+		<price>
+			819
+		</price>
+	</player>
+	<player>
+		<name>
+			Pro-Ject Primary E Phono
+		</name>
+		<color>
+			Чёрный
+		</color>
+		<price>
+			1349
+		</price>
+	</player>
+</content>
