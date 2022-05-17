@@ -1,7 +1,13 @@
-*
+  *
   padding: 0
   margin: 0
   box-sizing: border-box
+
+@keyframes blink 
+    from 
+      text-shadow: black 0px 0px 10px
+    to 
+      text-shadow: black 0px 0px 0px
 
 header#mainHeader
   width: 100%
@@ -10,6 +16,7 @@ header#mainHeader
   display: flex
   flex-flow: row nowrap
   position: fixed
+
 
   #menu
     display: none
@@ -31,14 +38,19 @@ header#mainHeader
     justify-content: space-evenly
     font-family: 'Montserrat-hairline'
 
+    div
+      width: 300px
+      text-align: center
+      font-size: 18px
+
+    div:hover 
+      animation: blink infinite alternate-reverse linear 1s
+
 a
   text-decoration: none
   color: inherit
 
-header#mainHeader nav#mainNav div
-  width: 300px
-  text-align: center
-  font-size: 18px
+header#mainHeader nav#mainNav 
 
 nav#mainNav div img
   display: none

@@ -50,6 +50,19 @@ header#mainHeader nav#mainNav div {
     font-size: 18px;
 }
 
+header#mainHeader nav#mainNav div:hover {
+    animation: blink infinite alternate-reverse linear 1s;
+}
+
+@keyframes blink {
+    from {
+        text-shadow: black 0px 0px 10px;
+    }
+    to {
+        text-shadow: black 0px 0px 0px;
+    }
+}
+
 nav#mainNav div img {
     display: none;
 }
@@ -219,6 +232,7 @@ main a div.item {
     justify-content: center;
     align-content: center;
     padding: 20px;
+    transition: all 0.2s linear;
 }
 
 main div.item:hover {
